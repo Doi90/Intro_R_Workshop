@@ -4,7 +4,7 @@
 
 ## R vs RStudio
 
-One of the first sticking points for a lot of people is figuring out the difference between `R` and `RStudio`. `R` is a free and open source programming language for statistical computing. `RStudio` is a free and open source integrated development environment (IDE) for `R`. `R` is the engine and can be interated with directly. `RStudio` is an interface through which we use `R` that provides a wide array of additional functionality to improve the user experience.
+One of the first sticking points for a lot of people is figuring out the difference between `R` and `RStudio`. `R` is a free and open source programming language for statistical computing. `RStudio` is a free and open source integrated development environment (IDE) for `R`. `R` is the engine and can be integrated with directly. `RStudio` is an interface through which we use `R` that provides a wide array of additional functionality to improve the user experience.
 
 <hr class="small">
 

@@ -9,9 +9,9 @@
 There are 5 main data types:
 
 +  doubles/numerics: standard numbers e.g. 3.14
-+  integers: whole numbers *without* decimal places eg. 1 but not 1.0 (and written as `1L` to specify integer status)
++  integers: whole numbers *without* decimal places e.g. 1 but not 1.0 (and written as `1L` to specify integer status)
 +  complex: These you can pretty much ignore. This is dealing with things like imaginary numbers.
-+  logical: These are boolean values of `TRUE` and `FALSE` that are encoded as `1` and `0` respectively
++  logical: These are Boolean values of `TRUE` and `FALSE` that are encoded as `1` and `0` respectively
 +  character: These are strings of text e.g. `word` or `this is a sentence`. When specifying these in `R` they need be be enclosed in quotation marks like `"word"` or `'word'`.
 
 We can find the type of data something is stored as in `R` with the `typeof()` function, but for the majority of purposes it is better to know the *class* of data as that is the usual way `R` will communicate it to you. To do this we use the `class()` function:
@@ -28,7 +28,7 @@ class('banana')
 
 ## Type Coercion
 
-Data types/classes are important because we need to handle different types of data differently. For exampe, we can add two numeric values together, or a numeric and an integer, but we can't add a numeric and a character together. `10 + "apple"` is nonsense, and `R` treats it that way. This enforced strictness is important, but it has some drawbacks to be aware of. The most important one is that all data in a single vector must be the same type. If you have a mix of values then everything will be converted to the "simplest" data type according to the following rule:
+Data types/classes are important because we need to handle different types of data differently. For example, we can add two numeric values together, or a numeric and an integer, but we can't add a numeric and a character together. `10 + "apple"` is nonsense, and `R` treats it that way. This enforced strictness is important, but it has some drawbacks to be aware of. The most important one is that all data in a single vector must be the same type. If you have a mix of values then everything will be converted to the "simplest" data type according to the following rule:
 
 <center>**logical > integer > numeric > complex > character**</center>
 
@@ -75,7 +75,7 @@ Now that we understand *data types* it is time to move on to the *data structure
 
 ### Vectors
 
-We've alredy covered how to create a basic vector, so now we will cover how to manipulate the vector.
+We've already covered how to create a basic vector, so now we will cover how to manipulate the vector.
 
 The `c()` function can also append things to an existing vector:
 
@@ -115,7 +115,7 @@ my_vec[3]
 my_vec[c(2,4)]
 ```
 
-Instead of asking for specific elements of a vector by index you can ask `R` to return any values that meet a specific criteria. We do this by placing a logical/boolean test in `[]` in place of an index.
+Instead of asking for specific elements of a vector by index you can ask `R` to return any values that meet a specific criteria. We do this by placing a logical/Boolean test in `[]` in place of an index.
 
 ```{r data09}
 my_vec <- 1:10

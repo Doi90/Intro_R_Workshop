@@ -38,7 +38,7 @@ But the two values above can't be fairly used in conjunction with each other. Wh
 
 Well it turns out that while we don't know the age of some of the passengers, we do know if each of them survived. This means we are summarising values from different data sets: the survival rate of *all* passengers, and the mean age of passengers *with known ages*. Unless the missing values have an identical distribution to the known values their absence will change the mean value. What if all of the unknowns are children? What if they are all >50?
 
-This may seem somewhat trivial here, but if you are performing more elaborate statistical analyses like fitting linear models then it is crucial to ensure your datasets are identical. Models fit to two different datasets cannot be directly compared with model evaluation statistics like AIC, R^2^, AUC, etc. You can usually supply datasets with `NA`s to model fitting functoins in `R` but they will automatically drop rows with missing values **for covariates included in the model only**. This means that two models fit to the same data frame with different covariate combinations can actually be fit to different datasets and no longer comparable for model selection.
+This may seem somewhat trivial here, but if you are performing more elaborate statistical analyses like fitting linear models then it is crucial to ensure your datasets are identical. Models fit to two different datasets cannot be directly compared with model evaluation statistics like AIC, R^2^, AUC, etc. You can usually supply datasets with `NA`s to model fitting functions in `R` but they will automatically drop rows with missing values **for covariates included in the model only**. This means that two models fit to the same data frame with different covariate combinations can actually be fit to different datasets and no longer comparable for model selection.
 
 They key to avoiding this pitfall is to remove all `NA` values in advance. Conveniently, `R` makes this easy with the `na.omit()` function. Lets create a new data frame that is a version of `titanic` without missing values:
 
@@ -53,11 +53,11 @@ titanic_clean <- na.omit(titanic)
 You will often want to subset your data frame such that you only keep values that meet a certain criteria:
 
 +  Only observations for a certain species
-+  Only observations for all species *except* a certian species
++  Only observations for all species *except* a certain species
 +  Only observations for a specific geographic region
 +  Only observations for specific gene locus
 
-This is achieved by suppling a logical test in place of a particular index inside the `[ , ]` notation. This is going to be the subsetting of rows by values in a single column, so we put our logical test on the left of the `,` in `[ , ]`. Lets say we only want to keep the passengers who paid less than ten pounds for their ticket:
+This is achieved by supplying a logical test in place of a particular index inside the `[ , ]` notation. This is going to be the subsetting of rows by values in a single column, so we put our logical test on the left of the `,` in `[ , ]`. Lets say we only want to keep the passengers who paid less than ten pounds for their ticket:
 
 ```{r manip05}
 titanic_cheap <- titanic_clean[titanic_clean$Fare < 10, ]
@@ -98,7 +98,7 @@ titanic_rich <- titanic_clean[titanic_clean$Pclass == 1 & titanic_clean$Fare > 2
 dim(titanic_rich)
 ```
 
-Only eighteen pasengers!
+Only eighteen passengers!
 
 ```{r Challenge_14}
 ####################

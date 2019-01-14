@@ -10,7 +10,7 @@ The simplest thing you could do with `R` is do arithmetic:
 1 + 2
 ```
 
-If you type in an incomplete command, `R` will wait for you to complete it. If the symbol to the left of the bottom line in the console is `>` then `R` is ready to accept a new command, while a `+` means it is waiting for you to finsh the previous command.
+If you type in an incomplete command, `R` will wait for you to complete it. If the symbol to the left of the bottom line in the console is `>` then `R` is ready to accept a new command, while a `+` means it is waiting for you to finish the previous command.
 
 If you want to cancel a command you can simply hit `Esc` and RStudio will give you back the ">" prompt (or `Ctrl+C` for a Mac). This is a useful tip to remember if you ever get stuck in a `+` loop in the console!
 
@@ -81,9 +81,9 @@ log10(10) # base-10 logarithm
 exp(0.5) # e^(1/2)
 ```
 
-Don't worry about trying to remember every function in `R`. You can simply look them up on google, or if you can remember the start of the function's name, use the tab completion in `RStudio`.
+Don't worry about trying to remember every function in `R`. You can simply look them up on Google, or if you can remember the start of the function's name, use the tab completion in `RStudio`.
 
-This is one advantage that `RStudio` has over `R` on its own, it has autocompletion abilities that allow you to more easily look up functions, their arguments, and the values that they take.
+This is one advantage that `RStudio` has over `R` on its own, it has auto-completion abilities that allow you to more easily look up functions, their arguments, and the values that they take.
 
 Typing a `?` before the name of a function will open the help page for that function. As well as providing a detailed description of the function  and how it works, scrolling to the bottom of the help page will usually show a collection of code examples which illustrate how to use it. We'll go through an example later.
 
@@ -119,7 +119,7 @@ We can also do comparison in `R`:
 
 A word of warning about comparing numbers: you should never use `==` to compare two numbers unless they are integers (a data type which can specifically represent only whole numbers).
 
-Computers may only repr esent decimal numbers with a certain degree of precision, so two numbers which look the same when printed out by `R`, may actually have different underlying representations and therefore be different by a small margin of error (called Machine numeric tolerance).
+Computers may only represent decimal numbers with a certain degree of precision, so two numbers which look the same when printed out by `R`, may actually have different underlying representations and therefore be different by a small margin of error (called Machine numeric tolerance).
 
 Instead you should use the `all.equal()` function.
 

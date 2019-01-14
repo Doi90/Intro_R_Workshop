@@ -13,8 +13,8 @@ Before we jump in to teaching how to code in `R` we're going to establish some p
 It is best to keep all files associated with a given project (like a PhD chapter) located in a single root folder. This is commonly called a "one folder, one project" mentality, and has multiple benefits including:
 
 +  Easy communication with collaborators (particularly in a version controlled environment)
-+  A clear, easily navigatable directory structure makes finding specific files easier
-+  You don't accidently lose an important file for your analysis because you kept it somewhere else
++  A clear, easily navigable directory structure makes finding specific files easier
++  You don't accidentally lose an important file for your analysis because you kept it somewhere else
 
 That said, there is no single best way to organise a file system. The key is to make sure that your chosen directory structure and the location of the files therein is consistent, informative, and, most importantly, works for you.
 
@@ -43,7 +43,7 @@ An example directory structure (for a `MyProject` root directory) might include 
 R builds on the "one folder, one project" mentality with the creation of `R Projects`. An `R Project` serves as a self-contained environment for your entire analysis. Amongst other things, the benefits of an `R Project` are:
 
 +  Relative file paths. The path to a file now only needs to be specified relative to the `R project` root directory. No more file paths going off the screen!
-+  Maintain your environment between sessions. Normally, unless explicitly saved to file and re-loaded, your environment is lost between sessions. This means re-running your code again and again, which is unfeasible for larger analysis that may take hours or days to run. An `R project` will automatically save and re-load your environment.
++  Maintain your environment between sessions. Normally, unless explicitly saved to file and re-loaded, your environment is lost between sessions. This means re-running your code again and again, which is infeasible for larger analysis that may take hours or days to run. An `R project` will automatically save and re-load your environment.
 +  Easy collaboration. A combination of the two above points means that you can send an `R project` directory to a colleague and the whole thing will run with no issue. This would otherwise require, at minimum, manually changing all file paths.
 +  Version control. `RStudio` has an in-built point-and-click git interface that is only accessible when using an `R Project`.
 
@@ -74,7 +74,7 @@ Just like there is no single correct way of structuring a directory, there is no
 
 ## Code style guides
 
-Another thing that makes reading a code script easier is the use of a style guide. A style guide is essentially a series of self-imposed grammer/syntax rules to follow to write neat and human-readable code. Two commonly adopted ones are [Google's `R` style guide](https://google.github.io/styleguide/Rguide.xml) and [Hadley Wickham's `R` style guide](http://style.tidyverse.org/). You can also define your own by picking and choosing rules from different places. Some common things to consider:
+Another thing that makes reading a code script easier is the use of a style guide. A style guide is essentially a series of self-imposed grammar/syntax rules to follow to write neat and human-readable code. Two commonly adopted ones are [Google's `R` style guide](https://google.github.io/styleguide/Rguide.xml) and [Hadley Wickham's `R` style guide](http://style.tidyverse.org/). You can also define your own by picking and choosing rules from different places. Some common things to consider:
 
 +  Naming conventions. Be consistent with how you name variables, functions, etc. Many people implement a different style for variables and functions to help tell them apart. Some options are:
     +  camelCase

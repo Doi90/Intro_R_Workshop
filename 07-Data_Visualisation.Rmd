@@ -31,7 +31,7 @@ library(ggplot2)
 
 The key to understanding `ggplot2` is thinking about a figure in layers. 
 
-To start with we need to create the base layer for our plot. This is done with the `ggplot()` function, and it is here we define are **data** and **coordinate system** components. We set our **data** compnent using the `data` argument, and then use the aesthetic function `aes()` as a second argument to define our **coordinate system**. The `aes()` function can potentially be used multiple times when constructing our figure, so it is important to know that anything defined inside the base `ggplot()` function is a *global options* inherited by all subsequent layers. 
+To start with we need to create the base layer for our plot. This is done with the `ggplot()` function, and it is here we define are **data** and **coordinate system** components. We set our **data** component using the `data` argument, and then use the aesthetic function `aes()` as a second argument to define our **coordinate system**. The `aes()` function can potentially be used multiple times when constructing our figure, so it is important to know that anything defined inside the base `ggplot()` function is a *global options* inherited by all subsequent layers. 
 
 Time for an example:
 
@@ -176,7 +176,7 @@ ggplot(data = titanic_clean,
   geom_bar(position = "dodge")
 ```
 
-And now facetted by passenger class:
+And now faceted by passenger class:
 
 ```{r titanic14, warning = FALSE}
 ggplot(data = titanic_clean,
