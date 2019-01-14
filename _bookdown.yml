@@ -1,10 +1,10 @@
-book_filename: "Ecology_and_Evolution_PhD_Program_Beginners_R_Workshop.Rmd"
+book_filename: "Beginners_R_Workshop.Rmd"
 author: "David Wilkinson"
 date: "`r Sys.Date()`"
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
-repo: https://github.com/Doi90/EcolEvol_R_Workshop
+repo: https://github.com/Doi90/Intro_R_Workshop
 link-citations: yes
 output_dir: "docs"
 delete_merged_file: true
